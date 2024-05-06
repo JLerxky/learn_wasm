@@ -11,9 +11,9 @@ readme = "README.md"
 [dependencies]
 common_x = { workspace = true, default-features = false, features = ["log"] }
 
-anyhow = { workspace = true }
 tracing = { workspace = true }
-wasmer = { workspace = true }
+wasmtime = { workspace = true }
+wasi-common = { workspace = true }
 
 [lints]
 workspace = true

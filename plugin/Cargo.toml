@@ -8,11 +8,6 @@ exclude = ["assets/**/*"]
 keywords = ["wasm"]
 readme = "README.md"
 
-[lib]
-crate-type = ["cdylib", "rlib"]
-
-[dependencies]
-wasm-bindgen = { workspace = true }
-
-[lints]
-workspace = true
+[[bin]]
+path = "./src/hello.rs"
+name = "hello"

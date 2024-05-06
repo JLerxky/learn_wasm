@@ -5,11 +5,10 @@ members = ["executor", "plugin"]
 [workspace.dependencies]
 common_x = { version = "0.3", default-features = false }
 
-anyhow = "1.0"
 clap = { version = "4.5", features = ["derive"] }
 tracing = "0.1"
-wasmer = "4.2"
-wasm-bindgen = "0.2"
+wasmtime = "20.0"
+wasi-common = "20.0"
 
 [profile.dev]
 debug = 0

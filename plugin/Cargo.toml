@@ -1,0 +1,18 @@
+[package]
+name = "plugin"
+version = "0.1.0"
+authors = ["JLer <jlerxky@live.com>"]
+edition = "2021"
+categories = ["game"]
+exclude = ["assets/**/*"]
+keywords = ["wasm"]
+readme = "README.md"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = { workspace = true }
+
+[lints]
+workspace = true

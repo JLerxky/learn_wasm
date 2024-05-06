@@ -1,0 +1,19 @@
+[package]
+name = "executor"
+version = "0.1.0"
+authors = ["JLer <jlerxky@live.com>"]
+edition = "2021"
+categories = ["game"]
+exclude = ["assets/**/*"]
+keywords = ["wasm"]
+readme = "README.md"
+
+[dependencies]
+common_x = { workspace = true, default-features = false, features = ["log"] }
+
+anyhow = { workspace = true }
+tracing = { workspace = true }
+wasmer = { workspace = true }
+
+[lints]
+workspace = true
